@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+
+      body{
+        background-color: green;
+      }
+
+      .box {
+        background-color : white;
+        height : 20em;
+        width : 45%;
+        float : left;
+        border : 0.2em solid;
+        margin: 1%;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="box">
+
+      </div>
+      <div class="box">
+
+      </div>
+      <div class="box">
+
+      </div>
+      <div class="box">
+
+      </div>
+    </div>
+
+
+    <script type="text/javascript">
+
+      var container = document.querySelector(".container");
+
+      container.addEventListener("touchstart", function(e){
+        e.target.innerHTML = "touched";
+      });
+
+      container.addEventListener("touchend", function(e){
+        e.target.innerHTML = "touch ended";
+      });
+
+    </script>
+  </body>
+</html>
